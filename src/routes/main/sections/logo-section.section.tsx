@@ -1,7 +1,7 @@
 import React from 'react'
 import { ReactComponent as IntroductionLogo } from '../../../images/introduction-logo.svg'
-import LogoBear from '../../../images/logo-bear.png'
 import styled from 'styled-components/macro'
+import LogoBear from '../../../images/logo-bear.png'
 
 
 const Block = styled.div`
@@ -9,6 +9,9 @@ const Block = styled.div`
   height: 100vh;
   display: flex;
   justify-content: center;
+  @media(max-width: 800px) {
+  height: 160%;
+  }
 `
 const Content = styled.div`
   width: 1024px;
